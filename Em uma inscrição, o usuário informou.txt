@@ -13,6 +13,7 @@ No algoritmo, descreva como será:
 --------------------------------------------------
 
 1.Proposta das variáveis:
+Será necessário criar uma variável para armazenamento de cada dado informado pelo usuário. Sendo assim: 
 Uma variável para armazenamento do nome do usuário.
 Uma variável para armazenamento do número de CPF do usuário.
 Uma variável para armazenamento do número de RG do usuário.
