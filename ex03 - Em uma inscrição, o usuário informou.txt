@@ -31,7 +31,7 @@ var endereço = " "
 
 3.Comando de Atribuição
 nome = "José Almeida da Silva"
-cpf = "12345678900"
-rg = "9517530"
+cpf = "123.456.789-00"
+rg = "9.517.530"
 altura = 1.78
 endereço = "Rua A, 380 – Centro – Recife/PE"
