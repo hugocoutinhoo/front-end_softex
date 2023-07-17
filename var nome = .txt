@@ -1,0 +1,14 @@
+var nome = ""
+var endereco = ""
+var cidade = ""
+var cpf = ""
+var rg = ""
+var idade = 0
+var nomeDoPai = ""
+var nomeDaMae = ""
+var peso = 0.0
+var rendaBruta = 0.0
+
+inicio
+escreva("digite seu nome: ");
+leia(nome)
