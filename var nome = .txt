@@ -1,14 +1,41 @@
-var nome = ""
-var endereco = ""
-var cidade = ""
-var cpf = ""
-var rg = ""
-var idade = 0
-var nomeDoPai = ""
-var nomeDaMae = ""
-var peso = 0.0
-var rendaBruta = 0.0
+var
+    nome, endereco, cidade, nomePai, nomeMae = caractere;
+    cpf, rg, idade = inteiro;
+    peso, rendaBruta = real;
 
 inicio
-escreva("digite seu nome: ");
-leia(nome)
+
+    escreva("digite seu nome: ")
+    leia(nome)
+    escreva("digite seu endereco: ")
+    leia(endereco)
+    escreva("digite sua cidade: ")
+    leia(cidade)
+    escreva("digite seu CPF: ")
+    leia(cpf)
+    escreva("digite seu RG: ")
+    leia(rg)
+    escreva("digite sua idade: ")
+    leia(idade)
+    escreva("digite o nome do seu pai: ")
+    leia(nomePai)
+    escreva("digite o nome da sua mãe: ")
+    leia(nomeMae)
+    escreva("digite seu peso: ")
+    leia(peso)
+    escreva("digite sua renda bruta: ")
+    leia(rendaBruta)
+
+    escrevaL("--------------")
+    escrevaL("O seu nome é: ", nome)
+    escrevaL("O seu endereço é: ", endereco)
+    escrevaL("A sua cidade é: ", cidade)
+    escrevaL("CPF: ", cpf)
+    escrevaL("RG: ", rg)
+    escrevaL("A sua idade é: ", idade)
+    escrevaL("Nome do pai: ", nomePai)
+    escrevaL("Nome da mãe: ", nomeMae)
+    escrevaL("O seu peso é: " , peso)
+    escrevaL("Renda bruta: " rendaBruta)
+
+fimalgoritmo
