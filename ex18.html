@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let candidato_X = 889;
+        let candidato_Y = 847;
+        let candidato_Z = 515;
+        let branco = 0;
+
+        function votar(voto) {
+        if (isNaN(voto)) {
+            return "Por favor, insira um número como voto.";
+        }
+
+        switch (voto) {
+            case 1:
+            candidato_X++;
+            break;
+            case 2:
+            candidato_Y++;
+            break;
+            case 3:
+            candidato_Z++;
+            break;
+            case 0:
+            branco++;
+            break;
+            default:
+            return "Voto inválido. Digite um número que corresponda a um candidato ou 0 para voto branco.";
+        }
+
+        return "Voto registrado com sucesso!";
+        }
+
+        let continuarVotacao = true;
+        while (continuarVotacao) {
+        let voto = prompt("Insira o número correspondente ao candidato (1, 2 ou 3) ou 0 para voto em branco:");
+        let resultado = votar(Number(voto));
+        alert(resultado);
+
+        let finalizar = confirm("Deseja finalizar a votação?");
+        if (finalizar) {
+            continuarVotacao = false;
+        }
+        }
+
+        
+        let resultados = [
+        { candidato: "Candidato X", votos: candidato_X },
+        { candidato: "Candidato Y", votos: candidato_Y },
+        { candidato: "Candidato Z", votos: candidato_Z },
+        { candidato: "Votos em branco", votos: branco }
+        ];
+
+        resultados.sort((a, b) => b.votos - a.votos);
+
+        
+        alert("Resultado da eleição:");
+        for (let resultado of resultados) {
+            alert(`${resultado.candidato}: ${resultado.votos} votos`);
+        }
+        alert(`Votos nulos: 0`);
+        alert(`Vencedor: ${resultados[0].candidato}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
