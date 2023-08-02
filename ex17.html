@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function dadosDoUsuario() {
+            let nome = window.prompt("Digite seu nome completo: ");
+            let anoNasc = Number(window.prompt("Digite o ano do seu nascimento (1922 a 2021): "));
+                if(anoNasc < 1922 || anoNasc > 2021) {
+                    alert("Ano inválido. Tente novamente.")
+                    return anoNasc;
+                } else {
+                    alert("Vamos calcular sua idade.")
+                }
+            let idade = new Date().getFullYear() - anoNasc
+            alert(`Olá ${nome}. Você completou ou completará ${idade} anos em 2023.`)
+        }
+
+        daoosDoUsuario();
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
