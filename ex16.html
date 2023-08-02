@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function calculadora() {
+
+            while(true) {
+                let operacao = Number(prompt("Digite o número que corresponda a operação desejada: 1: Soma / 2: Subtração /3: Multiplicação / 4: Divisão / 0: Sair"));
+
+                if (operacao === 0) {
+                    alert("Até mais!");
+                    break;
+                } else if (operacao < 1 || operacao > 4) {
+                    alert("Essa opção não existe");
+                    continue;
+                } else {
+                    let num1 = Number(prompt("Digite o primeiro valor:"));
+                    let num2 = Number(prompt("Digite o segundo valor:"));
+                    let resultado;
+
+                    switch (operacao) {
+                        case 1:
+                        resultado = num1 + num2;
+                        break;
+                        case 2:
+                        resultado = num1 - num2;
+                        break;
+                        case 3:
+                        resultado = num1 * num2;
+                        break;
+                        case 4:
+                        resultado = num1 / num2;
+                        break;
+                    }
+                    alert(`Resultado: ${resultado}`);
+                }            
+            }
+                
+        }
+        
+        calculadora()
+
+        
+
+    </script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+</body>
+</html>
